@@ -8,75 +8,59 @@
 <body>
 <p>Completar con la implementación de las funciones correspondientes</p>
 <script type="text/javascript">
-// 1- suma (declaración tradicional)
 function suma(num1, num2) {
     return num1 + num2;
 }
 
-// 2- elevarAlCubo (función flecha)
 const elevarAlCubo = num => num ** 3;
 
-// 3- restoDivisionEntera (expresión de función)
 const restoDivisionEntera = function(dividendo, divisor) {
     return dividendo % divisor;
 };
 
-// 4- numeroPi
 function numeroPi() {
     return Math.PI;
 }
 
-// 5- numeroRandom
 const numeroRandom = () => Math.random();
 
-// 6- numeroRandomDesdeHasta
 function numeroRandomDesdeHasta(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-// 7- esPar
 const esPar = numero => numero % 2 === 0;
 
-// 8- esPositivo
 function esPositivo(num) {
     return num > 0;
 }
 
-// 9- clasificarNumero
 function clasificarNumero(num) {
     let parImpar = esPar(num) ? "par" : "impar";
     let positivoNegativo = esPositivo(num) ? "positivo" : "no positivo";
     return `El número ${num} es ${parImpar} y ${positivoNegativo}.`;
 }
 
-// 10- transformarMayuscula
 function transformarMayuscula(cadena) {
     return cadena.toUpperCase();
 }
 
-// 11- primeraLetra
 const primeraLetra = cadena => cadena.charAt(0);
 
-// 12- sinPrimeraLetra
 function sinPrimeraLetra(cadena) {
     return cadena.slice(1);
 }
 
-// 13- primeraLetraMayuscula
 const primeraLetraMayuscula = cadena => 
     cadena.charAt(0).toUpperCase() + cadena.slice(1);
 
-// 14- terminaCon
 function terminaCon(palabra, terminacion) {
     return palabra.endsWith(terminacion);
 }
 
-// 15- palabraInvertida
 const palabraInvertida = palabra => 
     palabra.split('').reverse().join('');
 
 
-// PRUEBAS
 console.log("Resultados de suma():")
 console.log(suma(2,3));
 console.log(suma(4,4));
